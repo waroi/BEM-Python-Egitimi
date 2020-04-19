@@ -38,13 +38,36 @@
 # gunler.sort() # sort ile stringleri alfabetik sıralayabiliyoruz.
 # print(gunler)
 
-gunler=["pazartesi","salı","carşamba","perşembe","cuma","cumartesi","pazar","cuma"]
+# gunler=["pazartesi","salı","carşamba","perşembe","cuma","cumartesi","pazar","cuma"]
 # print(gunler.index("cuma"))
 # gunler.reverse() # reverse listenin sıralamasını tam tesine çevirir.
 # print(gunler.index("cuma")) #index içerine verilen elamanın listede kaçıncı sırada olduğunu verir.
 # print(gunler.count("cuma")) #count elamanın liste içinde kaç kere kullanıldığını verir.
 # print(gunler)
-gunler2=gunler.copy()
+# gunler2=gunler.copy()
 # print(gunler2)
-gunler2.clear()
-print(gunler2)
+# gunler2.clear()
+# print(gunler2)
+
+
+
+# islemler=["+","-","*","/"]
+
+# a=int(input("ilk sayıyı giriniz:"))
+# x=input("yapılacak işlemi giriniz:")
+# b=int(input("ikinci sayıyı giriniz:"))
+
+# if x == islemler[0]:
+#     sonuc =a+b
+#     print("Sonucunuz =",sonuc)
+# elif x ==islemler[2]:
+#     sonuc =a*b
+#     print("Sonucunuz =",sonuc)
+# elif x== islemler[1]:
+#     sonuc =a-b
+#     print("Sonucunuz =",sonuc)
+# elif x== islemler[3]:
+#     sonuc =int(a/b)
+#     print("Sonucunuz =",sonuc)
+# else:
+#     print("Yanlış işlem seçtiniz")
