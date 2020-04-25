@@ -198,3 +198,127 @@
 #   print("Dersimize hoşgeldiniz.")
 # else:
 #   print("Başka derslerde görüşmek üzere")
+
+# Giray İbrahim Eker:
+# baslik='''
+# *************************************************************
+# *         -HESAP MAKİNASI PROGRAMINA HOŞGELDİNİZ-           *
+# *************************************************************
+# PROGRAMDAN ÇIKMAK İÇİN 'Q'e BASIN!!!
+# '''
+# print(baslik)
+# islemler=["+","-","*","/"]
+# print("Yapılabilen işlemler:",islemler)
+# i=1
+# x=0
+# sonuc=0
+# while i>0:
+#     giris=input("Hangi işlemi yapmak istiyorsunuz?: ")
+#     if giris=="Q" or giris=="q":
+#         print("Programdan çıkılıyor...İYİ GÜNLER.")
+#         break
+#     else:
+#         if (x>1):
+#             a=sonuc
+#         else:
+#             a=int(input("ilk sayıyı giriniz:"))
+#         b=int(input("ikinci sayıyı giriniz:"))    
+#         if giris==islemler[0]:
+#             sonuc=a+b
+#             print("Sonucunuz:",sonuc)
+#         elif giris==islemler[2]:
+#             sonuc=a*b   
+#             print("Sonucunuz:",sonuc)
+#         elif giris==islemler[1]:
+#             sonuc=a-b   
+#             print("Sonucunuz:",sonuc)
+#         elif giris==islemler[3]:
+#             sonuc=int(a/b)   
+#             print("Sonucunuz:",sonuc)
+#         else:
+#             print("Yanlış İşlem Seçtiniz!!")    
+#         cikis=input("Devam etmek istiyor musunuz?(Y/N):")
+#         if cikis=="Y" or cikis=="y":
+#             i+=1
+#             devam=input("Aynı sonuç ile devam etmek istiyor musunuz?(Y/N :")
+#             if devam=="Y" or devam=="y":
+#                 x=2
+#             else:
+#                 x=0        
+#         else:
+#             i=0
+# else:
+#     print("İYİ GÜNLER...:)")
+
+
+
+# #**Eren ÖZDEMİR (Vize ve Final Ortlama Hesaplaması)** HATALI*****
+
+# print("Vize ve Final Not Ortalaması Yapmaya Hoşgeldiniz")
+# Vize=int(input("Lütfen Vize Notunuzu Giriniz: "))
+# Final=int(input("Lütfen Final Notunuzu Giriniz: "))
+# Ortalama=int((Vize*0.4)+(Final*0.6))
+# print("Ortalamanız",Ortalama)
+# if Ortalama<50:   # => Final değil ortalama karşılaştırılmış finalden düşük alsa bile geçebilir.
+#     print ("Final Notunuz FF oldugu için Kaldınız Bütlerde Görüşürüz :D ")
+# elif (Ortalama>=90):
+#     print("Aldıgınız Harf Notu: AA")
+#     print("Başarı Durumu:Çok İyi ") 
+# elif (Ortalama<90):          # => Burda da karşılaştırma mantık hatası var, 90'dan küçük ne alırsa alsın AB geliyor.
+#     print("Aldıgınız Harf Notu: AB")
+#     print("Başarı Durumu:İyi ") 
+# elif (Ortalama<80):
+#     print("Aldıgınız Harf Notu: BB")
+#     print("Başarı Durumu:İyi ") 
+# elif(Ortalama<70):
+#     print("Aldıgınız Harf Notu: CB") 
+#     print("Başarı Durumu:Orta ")           
+# elif(Ortalama>50 and Ortalama<60):
+#     print("Aldıgınız Harf Notu: DF")
+#     print("Başarı Durumu:Kötü ")
+
+
+# # -----Eren ÖZDEMİR Hesap Makinası 
+# print("HESAP MAKİNASI UYGULAMASINA HOŞGELİNİZ")
+
+
+# a=int(input("1.Sayıyı Giriniz: ")) 
+# b=int(input("2.Sayıyı Giriniz: "))
+
+
+# print("Yapmak İstediğiniz İşlemi Seciniz\n1)Toplama\t2)Çıkarma\t3)Çarpma\t4)Bölme")  
+# sec = input("Seçenekler: 1, 2, 3, 4 : ")
+# print()
+
+
+
+# if sec == "1":
+#     print("---->> TOPLAMA İŞLEMİ <<-----")
+#     print("{}  +   {}    =  {}".format(a, b, a+b))  
+#     print("Sonuc",a+b )
+    
+ 
+# elif sec == "2":
+#     print("---->> ÇIKARMA İŞLEMİ <<-----")
+#     a=int(input("1.Sayıyı Giriniz: ")) 
+#     b=int(input("2.Sayıyı Giriniz: "))
+#     print("{}  -   {}    =  {}".format(a, b, a-b))
+#     print("Sonuc",a-b )
+# elif sec == "3":
+#     print("---->> ÇARPMA İŞLEMİ <<-----")
+#     print("{}  *   {}    =  {}".format(a, b, a*b))
+#     print("Sonuc",a*b )
+# elif sec == "4":
+#     print("---->> BÖLME İŞLEMİ <<-----")
+#     print("{}  /   {}    =  {}".format(a, b, a/b))
+#     print("Sonuc",a/b )
+
+# else :
+#     print("Hatalı Giriş!!")
+    
+
+# islemD = input("Çıkmak için ' c ' ye basınız : ")
+# if islemD == "c":
+#         print("Çıkış Yapıldı.")
+#         quit()
+
