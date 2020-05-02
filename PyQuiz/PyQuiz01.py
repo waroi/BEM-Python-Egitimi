@@ -202,11 +202,11 @@
 # hipotenus= math.sqrt(a**2+b**2)
 # print(hipotenus)
 
-#Cevap8 Eren bey:
-a=int(input("ilk uzunlugu giriniz"))
-b=int(input("ikinci uzunlugu giriniz"))
-x=(a**2+b**2)**0.5
-print("Sonuc",x)
+# #Cevap8 Eren bey:
+# a=int(input("ilk uzunlugu giriniz"))
+# b=int(input("ikinci uzunlugu giriniz"))
+# x=(a**2+b**2)**0.5
+# print("Sonuc",x)
 
 
 # Çözümler
