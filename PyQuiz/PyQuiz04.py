@@ -44,18 +44,225 @@
 # Problem 2
 # Kullanıcıdan 2 tane sayı alarak bu sayıların en büyük ortak bölenini (EBOB) dönen bir tane fonksiyon yazın.
 
+# Cevap01
+#Eren ÖZDEMİR
+# sayı1=int(input("1.Sayiyi Giriniz : "))
+# sayı2=int(input("2.Sayiyi Giriniz : "))
+# def ebob_bul(sayı1,sayı2):
+#     i = 1
+#     ebob = 1
+#     while (i <= sayı1 and i <= sayı2 ):
+
+#         if ( not (sayı1 % i) and not (sayı2 % i)):
+#             ebob = i
+#         i += 1
+#     return ebob
+# print("ebob: ",ebob_bul(sayı1,sayı2))
+
+# Cevap02
+##İKİ SAYININ EBOB-EKOK BULMA-GİRAY EKER#####
+# def ebob(sayi1,sayi2):
+#     list=[]
+#     if sayi1>sayi2:
+#         for i in range(1,sayi2+1):
+#             if (sayi1%i==0 and sayi2%i==0):
+#                 list.append(i)
+#         list.sort()
+#         print("Girilen iki sayının EBOB'u {} 'dır.".format(list[-1]))
+#     elif sayi1<sayi2:
+#         for i in range(1,sayi1+1):
+#             if (sayi1%i==0 and sayi2%i==0):
+#                 list.append(i)
+#         list.sort()
+#         print("Girilen iki sayının EBOB'u {} 'dır.".format(list[-1]))
+
+# def ekok(sayi1,sayi2):
+#     ekok=1
+#     a=2  #ekok bulurken önce 2'ye bölerek başlarız 
+#     while (sayi1>1 or sayi2>1):
+#         if (sayi1%a==0 and sayi2%a==0):
+#             ekok *= a
+#             sayi1//=a
+#             sayi2//=a
+#         elif (sayi1%a==0 and sayi2%a!=0):
+#             ekok *= a
+#             sayi1//=a
+#         elif (sayi1%a!=0 and sayi2%a==0):
+#             ekok *= a
+#             sayi2//=a
+#         else:
+#             a += 1 
+#     print("Girilen iki sayının EKOK'u {}'dır".format(ekok))
+#     return ekok
+
+
+# print("""
+# *************************************************************
+# *               EBOB-EKOK BULMA ARACI                       *
+# *************************************************************
+# Hangi işlemi yapmak istediğinizi seçiniz?(Programdan çıkmak için "Q" ya basınız...)
+
+# 1-) EKOK BULMA
+# 2-) EBOB BULMA
+# """)
+# İ=1
+# while İ>0:
+#     islem=input("Yapmak istediğiniz işlemi seçiniz :")
+#     sayi1=int(input("1.Sayıyı giriniz: "))
+#     sayi2=int(input("2.Sayıyı giriniz: "))
+#     if islem=="q" or islem =="Q":
+#         print("Programdan çıkılıyor...İYİ GÜNLER")
+#     elif islem=="1":
+#         ekok(sayi1,sayi2)
+#     elif islem=="2":
+#         ebob(sayi1,sayi2)
+#     else:
+#         print("Yanlış yada eksik tuşlama yaptınız!!.")
+#     devam=input("İşleme devam etmek istiyor musunuz?(Y/N): ")
+#     if devam=="y" or devam=="Y":
+#         İ+=1
+#     else:
+#         print("Programdan çıkılıyor...İYİ GÜNLER")
+#         break
+
+
+# Cevap03
+# def ebob(num1,num2): 
+#     i = 1
+#     ebob = 1
+#     while (i <= num1 and i <= num2 ):
+#         if ( not (num1 % i) and not (num2 % i)):
+#             ebob = i
+#         i += 1
+#     return ebob
+# num1 = int(input("EBOB işlemi için 1. sayıyı giriniz: "))
+# num2 = int(input("EBOB işlemi için 2. sayıyı giriniz: "))
+# print("Ebob:",ebob(num1,num2))
+
+
 # Problem 3
 # Kullanıcıdan 2 tane sayı alarak bu sayıların en küçük ortak katlarını (EKOK) dönen bir tane fonksiyon yazın.
+
+#Cevap01
+# def ekok(num1,num2):
+#     i = 2
+#     ekok = 1
+#     while True:
+#         if (num1 % i == 0 and num2 % i == 0):
+#             ekok *= i
+#             num1 //= i 
+#             num2 //= i 
+#         elif (num1 % i == 0 and not num2 % i == 0):
+#             ekok *= i
+#             num1 //= i
+#         elif (not num1 % i == 0 and num2 % i == 0):
+#             ekok *= i
+#             num2 //= i
+#         else:
+#             i += 1
+#         if (num1 == 1 and num2 == 1):
+#             break
+#     return ekok
+# num1 = int(input("EKOK işlemi için 1. sayıyı giriniz: "))
+# num2 = int(input("EKOK işlemi için 2. sayıyı giriniz: "))
+# print("EKOK:",ekok(num1,num2))
+
+
+# Cevap02
+#Eren ÖZDEMİR
+# def ekok_bul(sayı1,sayı2): 
+#     i = 2
+#     ekok = 1
+#     while True:
+#         if (sayı1 % i == 0 and sayı2 % i == 0):
+#             ekok *= i
+#             sayı1 //= i
+#             sayı2 //= i
+#         elif (sayı1 % i ==  0 and sayı2 % i != 0):
+#             ekok *= i
+#             sayı1 //= i
+#         elif (sayı1 % i != 0 and sayı2 % i == 0):
+#             ekok *= i
+#             sayı2 //= i
+#         else:
+#             i += 1
+#         if (sayı1 == 1 and sayı2 == 1):
+#             break
+#     return ekok
+# sayı1 = int(input("1.Sayiyi Giriniz: "))
+# sayı2 = int(input("1.Sayiyi Giriniz: "))
+# print("Ekok:",ekok_bul(sayı1,sayı2))
+
 
 # Problem 4
 # Kullanıcıdan 2 basamaklı bir sayı alın ve bu sayının okunuşunu bulan bir fonksiyon yazın.
 # Örnek: 97 ---------> Doksan Yedi
 
+# Cevaop01
+#Eren ÖZDEMİR
+# birler = ["","bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz"]
+# onlar = ["","on","yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
+# def yazma(a):
+#     k = a % 10
+#     m = a // 10
+#     return onlar[m] + " " + birler[k]
+# while True:
+#     a = input("2 basamaklı Okunmasını istediğiniz bir sayı giriniz.(Çıkmak için q'ya basınız.)\n")
+#     if (a =="q"):
+#         print("Çıkış Yapıldı...")
+#         break
+#     else:
+#         a = int(a)
+#         print(" Girmiş oldugunuz \"{}\" sayısının yazılışı \"{}\" şeklindedir.".format(a,yazma(a)))
+
+# Cevap02
+####Girilen İki basamaklı sayının okunuşu-GİRAY EKER######
+# def ikibas(sayi):
+#     onlar_bas_oku=["Doksan","Seksen","Yetmiş","Altmış","Elli","Kırk","Otuz","Yirmi","On"]
+#     birler_bas_oku=["Dokuz","Sekiz","Yedi","Altı","Beş","Dört","Üç","İki","Bir"]
+#     rakam=[9,8,7,6,5,4,3,2,1]
+#     kalan1=sayi%10
+#     kalan2=sayi//10
+#     if kalan1>0 and kalan2>0 and kalan2<10:
+#         birler=birler_bas_oku[rakam.index(kalan1)]
+#         onlar=onlar_bas_oku[rakam.index(kalan2)]
+#         print("Girilen sayının okunuşu : {} {}".format(onlar,birler))
+#     elif kalan1==0 and kalan2<10:
+#         onlar=onlar_bas_oku[rakam.index(kalan2)]
+#         print("Girilen sayının okunuşu : {}".format(onlar))
+#     else:
+#         print("Girmiş olduğunuz sayı iki basamaklı değildir.")
+# sayi=int(input("İki basamaklı sayı giriniz: "))
+# ikibas(sayi)
+
+
 # Problem 5
 # 1'den 100'e kadar olan sayılardan pisagor üçgeni oluşturanları ekrana yazdıran bir fonksiyon yazın.(a <= 100,b <= 100)
 
+# Cevap01
+#######PISAGOR UCGENI BULMA-GİRAY EKER#########
+# def pisagorBulma():
+#     pısagorListesi = list()
+#     for i in range(1,101):
+#         for j in range(1,101):
+#             c=(i**2 + j**2)**0.5
+#             if (c == int(c)):
+#                 pısagorListesi.append((i,j,int(c)))
+#     return pısagorListesi
+# print("Pisagor Listesi: ",pisagorBulma())
 
-
+# Cevap02
+#Eren ÖZDEMİR
+# def pisagor_bul():
+#     pisagor_listesi = list()
+#     for i in range(1,101):
+#         for j in range(1,101):
+#             c = (i ** 2 + j ** 2) ** 0.5
+#             if (c == int(c) ):
+#                 pisagor_listesi.append((i,j,int(c)))
+#     return pisagor_listesi
+# for i in pisagor_bul():
+#     print(i)
 
 
 
