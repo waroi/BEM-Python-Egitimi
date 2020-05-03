@@ -235,6 +235,26 @@
 # sayi=int(input("İki basamaklı sayı giriniz: "))
 # ikibas(sayi)
 
+# Cevap03 - İpek Hanım
+# birler = ["","bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz"]
+# onlar = ["","on","yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"]
+# def sayi_okuma(a):
+#     k = a % 10
+#     m = a // 10
+#     return onlar[m] + " " + birler[k]
+# while True:
+#     number = input("2 basamaklı Okunmasını istediğiniz bir sayı giriniz. (Çıkmak için q'ya basınız.)\n")
+#     if (number == "q" or number == "Q"):
+#         print("Çıkış Yapıldı...")
+#         break
+#     elif(len(number)==2 or len(number)==1):
+#         print(" Girmiş oldugunuz \"{}\" sayısının yazılışı \"{}\" şeklindedir.".format(number,sayi_okuma(int(number))))
+#     else:
+#         if(number.isdigit()):
+#             number = input("2 basamaklı bir sayı giriniz. (Çıkmak için q'ya basınız.)\n")
+#         else:
+#             print("Sayı giriniz...")
+
 
 # Problem 5
 # 1'den 100'e kadar olan sayılardan pisagor üçgeni oluşturanları ekrana yazdıran bir fonksiyon yazın.(a <= 100,b <= 100)
