@@ -5,6 +5,42 @@
 # 1'den 1000'e kadar olan sayılardan mükemmel sayı olanları ekrana yazdırın. Bunun için bir sayının mükemmel olup olmadığını dönen bir tane fonksiyon yazın.
 # Bir sayının bölenlerinin toplamı kendine eşitse bu sayı mükemmel bir sayıdır. Örnek olarak 6 mükemmel bir sayıdır (1 + 2 + 3 = 6).
 
+# Cevap01
+# ###MÜKEMMEL SAYI BULMA(FONKSİYON)-GİRAY EKER#####
+# def mukemmelSayi(sayi):
+#     mukSayi=list()
+#     toplam=0
+#     for i in range(1,sayi):
+#         if (sayi%i==0):
+#             toplam +=i                
+#     if(toplam == sayi):
+#         mukSayi.append(toplam)
+#     return mukSayi
+
+# mukSayi=list()
+# for sayi in range(1,1001):
+#     if (mukemmelSayi(sayi)):
+#         mukSayi.append(sayi)
+# print("Mükemmel Sayılar Listesi: ",mukSayi)
+
+#Cevap02
+#Eren ÖZDEMİR
+# mukemmel_mi = lambda sayi: sum(filter(lambda d: sayi % d == 0, range(1, sayi))) == sayi
+# print(list(filter(mukemmel_mi, range(1, 1001))))
+
+# Cevap03
+#Eren ÖZDEMİR
+# def mükemmel(sayı):
+#     toplam = 0
+#     for i in range(1,sayı):
+#         if (sayı % i == 0):
+#             toplam += i 
+#     return toplam == sayı
+# for i in range(1,1001):
+#     if (mükemmel(i)):
+#         print("Mükemmel Sayı:",i)
+
+
 # Problem 2
 # Kullanıcıdan 2 tane sayı alarak bu sayıların en büyük ortak bölenini (EBOB) dönen bir tane fonksiyon yazın.
 
