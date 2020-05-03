@@ -266,7 +266,60 @@
 
 
 
-
+# # Hesap Makinası öğrneği
+# def topla(a,b):
+#     print("Sonucunuz: ",a+b)
+# def carp(a,b):
+#     print("Sonucunuz: ",a*b)
+# def cıkar(a,b):
+#     print("Sonucunuz: ",a-b)
+# def bol(a,b):
+#     print("Sonucunuz: ",int(a/b))
+# baslik='''
+# *************************************************************
+# *         -HESAP MAKİNASI PROGRAMINA HOŞGELDİNİZ-           *
+# *************************************************************
+# PROGRAMDAN ÇIKMAK İÇİN 'Q'e BASIN!!!
+# '''
+# print(baslik)
+# islemler=["+","-","*","/"]
+# print("Yapılabilen işlemler:",islemler)
+# i=1
+# x=0
+# sonuc=0
+# while i>0:
+#     giris=input("Hangi işlemi yapmak istiyorsunuz?: ")
+#     if giris=="Q" or giris=="q":
+#         print("Programdan çıkılıyor...İYİ GÜNLER.")
+#         break
+#     else:
+#         if (x>1):
+#             a=sonuc
+#         else:
+#             a=int(input("ilk sayıyı giriniz:"))
+#         b=int(input("ikinci sayıyı giriniz:"))    
+#         if giris==islemler[0]:
+#             topla(a,b)
+#         elif giris==islemler[2]:
+#             carp(a,b)
+#         elif giris==islemler[1]:
+#             cıkar(a,b)
+#         elif giris==islemler[3]:
+#             bol(a,b)
+#         else:
+#             print("Yanlış İşlem Seçtiniz!!")    
+#         cikis=input("Devam etmek istiyor musunuz?(Y/N):")
+#         if cikis=="Y" or cikis=="y":
+#             i+=1
+#             devam=input("Aynı sonuç ile devam etmek istiyor musunuz?(Y/N) :")
+#             if devam=="Y" or devam=="y":
+#                 x=2
+#             else:
+#                 x=0        
+#         else:
+#             i=0
+# else:
+#     print("İYİ GÜNLER...:)")
 
 
 
