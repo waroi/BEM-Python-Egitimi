@@ -261,10 +261,16 @@
 # def merhaba():
 #   print("Merhaba")
 # merhaba()
+# merhaba()
+# merhaba()
+# merhaba()
+# merhaba()
+
 
 # def topla(x,y):
 #   print(x+y)
 # topla(2,3)
+# topla(5,8)
 
 # return ile geriye değer döndürebiliriz
 # def topla(x,y):
@@ -291,12 +297,11 @@
 # print(a) # => Yerel değişkenen ulaşamam, çünkü silindi.
 
 # # Global Değişken
-# a=10
+# a=10 # => Global
 # def fonksiyon():
 #   global a
 #   a=5 # => Global
 #   def icfonk():
-#     global a
 #     a=3 # => Yerel
 #     print(a)
 #   icfonk()
@@ -316,15 +321,13 @@
 
 # ciftmi=lambda sayi:(sayi%2==0)
 # sayi=int(input("Bir sayı giriniz: "))
-# a=ciftmi(sayi)
-# if a:
+# if ciftmi(sayi):
 #   print("Çift")
 # else:
 #   print("Tek")
 
 # print("""****************
 # Bir sayının bölenlerini bulma
-
 # Programdan çıkmak için 'q' ya basın.
 # ****************
 # """)
