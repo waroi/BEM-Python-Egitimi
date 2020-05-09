@@ -60,7 +60,7 @@ while True:
             print(char if i in tahmin else "_"),    
         cevap = input("Kelimeyi Tahmin Edin: ")
         if cevap == kelime:
-            print("Kazandınız!nn")
+            print("Kazandınız!")
             break
         else:
             while True:

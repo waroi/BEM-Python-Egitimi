@@ -286,7 +286,7 @@
 
 # # Kwargs örneği
 # def users(**user):
-#   print(type(user))
+#   print(user)
 # users(isim='Varol', Soyisim='Maksutoğlu')
 
 # Yerel Değişken

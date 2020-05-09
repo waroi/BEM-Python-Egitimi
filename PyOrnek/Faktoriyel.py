@@ -1,18 +1,27 @@
-print("""*******************
-Faktoriyel Bulma Programı
+# print("""*******************
+# Faktoriyel Bulma Programı
 
-Programdan çıkmak için 'q' ya basın.
-*******************""")
-while True:
-    sayi =  input("Sayı:")
-    if (sayi == "q"):
-        print("Programdan çıkılıyor...")
-        break
-    sayi = int(sayi)
+# Programdan çıkmak için 'q' ya basın.
+# *******************""")
+# while True:
+#     sayi =  input("Sayı:")
+#     if (sayi == "q"):
+#         print("Programdan çıkılıyor...")
+#         break
+#     sayi = int(sayi)
 
-    faktoriyel = 1
-    for i in range(2,sayi+1):
-        faktoriyel *= i
+#     faktoriyel = 1
+#     for i in range(2,sayi+1):
+#         faktoriyel *= i
 
-    print("Faktoriyel:",faktoriyel)
+#     print("Faktoriyel:",faktoriyel)
 
+# sayi=5
+# faktoriyel = 1
+# for i in range(2,sayi+1):
+#     faktoriyel *= i
+# print("Faktoriyel:",faktoriyel)
+
+# import math
+# sayi=5
+# print(math.factorial(sayi))
