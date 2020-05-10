@@ -38,12 +38,12 @@
 # w+:  Hem okuma hem yazma için dosyayı açar,  Dosya yoksa oluşturur. Varsa dosyayı silmez üzerine yazar.
 # a: Ekleme yapmak için dosyayı açar. Dosya yoksa oluşturur. Dosya varsa imleç sondadır ve ekleme yapmamızı sağlar.
 # a+:  Hem okuma hem ekleme için dosyayı açar, Dosya yoksa oluşturur. Dosya varsa imleç sondadır ve ekleme yapmamızı sağlar.
-import os
+# import os
 # dosya=open("deneme.txt","w")
 # dosya.write("Ilk Dosyamiz")
 # dosya.close()
 
-# with open("deneme.txt","a") as dosya:
+# with open("deneme.txt","a") as dosya: # Dosyayı otomatik kapatıyor.
 #   dosya.write("\nEkleme Yapildi")
 
 # dosya=open("deneme.txt","a")
