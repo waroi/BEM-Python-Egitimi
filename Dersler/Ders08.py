@@ -139,7 +139,7 @@
 # yonetici1.bilgileriGoster()
 
 
-
+#-----------(Miras Alma)*****
 
 class Calisan():
   def __init__(self,isim,maas,departman):
