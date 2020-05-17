@@ -1,9 +1,9 @@
-#SQLite veritabanını projemize dahil ederiz
-import sqlite3
-#veritabanı oluşturuyuz
-vt=sqlite3.connect("okul.db")
-#veritabanımıza imlec ekleyerek veritabanımızda işlemlerimizi gerçekleştireceğiz
-islem=vt.cursor()
+# #SQLite veritabanını projemize dahil ederiz
+# import sqlite3
+# #veritabanı oluşturuyuz
+# vt=sqlite3.connect("okul.db")
+# #veritabanımıza imlec ekleyerek veritabanımızda işlemlerimizi gerçekleştireceğiz
+# islem=vt.cursor()
 
 
 # islem.execute("CREATE TABLE Kitaplık(İsim TEXT,Yazar TEXT, YayınEvi TEXT,SayfaSayısı INT)") 
@@ -92,6 +92,49 @@ con.close()
 
 
 # Ödev 1: Müzik veri tabanı içerisinde Playlist bir tablo olacak, içerisine şarkılar kayıt edeceğiz(sanatçı adı, şarkı adı, süre.... Vs.)
+
+
+# # Cevap01 Giray:
+# import sqlite3
+# pl=sqlite3.connect("playList.db")
+# play=pl.cursor()
+# play.execute("CREATE TABLE IF NOT EXISTS playlist(SanatciAdi TEXT,SarkiAdi TEXT,SarkiSüresi FLOAT)")
+# # play.execute("INSERT INTO playlist VALUES('Tarkan','Kuzu Kuzu',3)")
+# # pl.commit()
+# # play.execute("INSERT INTO playlist VALUES('Zeynep BASTIK','Uslanmıyor Bu',4)")
+# # pl.commit()
+# # play.execute("INSERT INTO playlist VALUES('Sebnem FERAH','Bugün',5)")
+# # pl.commit()
+# # play.execute("INSERT INTO playlist VALUES('Sebnem FERAH','Hoşçakal',5.0)")
+# # pl.commit()
+
+
+# play.execute("SELECT * FROM playlist")
+# veri=play.fetchall()
+# for i in veri:
+#     print(i)
+
+# ###Kullanıcının listeye müzik eklemesi
+# def addMusic(SanatciAdi,SarkiAdi,SarkiSüresi):
+#     play.execute("INSERT INTO playlist VALUES(?,?,?)",(SanatciAdi,SarkiAdi,SarkiSüresi))
+#     pl.commit()
+
+# sanatciAdi=input("SanatciAdi:")
+# sarkiAdi=input("SarkiAdi:")
+# sarkiSüre=float(input("SarkiSüresi:"))
+# addMusic(sanatciAdi,sarkiAdi,sarkiSüre)
+# pl.close()
+
+
+
+# #verileri silme
+# play.execute("DELETE FROM playlist WHERE  SarkiAdi='Kuzu Kuzu' ")
+# pl.commit()
+
+
+
+
+
 
 # Ödev 2:
 
