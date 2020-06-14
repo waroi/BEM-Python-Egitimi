@@ -1,7 +1,7 @@
 import pandas as pd
 
 df=pd.read_csv("covid/covid_19_data.csv")
-print(df)
+# print(df)
 
 # print(df.shape) # Satır ve Sütun sayısı
 
@@ -27,4 +27,5 @@ print(df)
 # b=(df["Country/Region"].value_counts()) # Ülkelere göre veri sayısı
 # print(b)
 
-# print(df[df["Province/State"]=="Chicago"]) # Belirtilen şehirdeki  veriler
+# c=df[df["Province/State"]=="Chicago"]
+# print(c) # Belirtilen şehirdeki  veriler

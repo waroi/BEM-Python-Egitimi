@@ -16,10 +16,10 @@ df=pd.read_csv("covid/covid_19_data.csv")
 # plt.show()
 
 
-# ülke=["Türkiye","Abd","Almanya","İtalya","İspanya","Fransa","Güney Kore","Japonya","UK","Çin","Hindistan"]
-# oran=[40,34.7,29.2,12.5,11.6,10.6,9.7,7.3,6.6,3.6,2.3]
-# plt.xlabel("Ülkeler")
-# plt.ylabel("Oranlar")
-# plt.title("yoğun bakım yatak sayısı")
-# plt.bar(ülke,oran)
-# plt.show()
+ülke=["Türkiye","Abd","Almanya","İtalya","İspanya","Fransa","Güney Kore","Japonya","UK","Çin","Hindistan"]
+oran=[40,34.7,29.2,12.5,11.6,10.6,9.7,7.3,6.6,3.6,2.3]
+plt.xlabel("Ülkeler")
+plt.ylabel("Oranlar")
+plt.title("yoğun bakım yatak sayısı")
+plt.bar(ülke,oran)
+plt.show()

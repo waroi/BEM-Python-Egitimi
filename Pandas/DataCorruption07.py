@@ -1,23 +1,25 @@
 import pandas as pd
 df=pd.read_csv("covid/covid_19_data.csv")
 
-a1=df.sort_values(by='Deaths',ascending=False).head(20) #♣ ölüm oranlarının azalan sıralaması (en fazla ölümolan 20 değer)
-print(a1)
-
-# df.drop(30492) # istenilen satırı silmek (tabloya yanısımayacak)
+# a1=df.sort_values(by='Deaths',ascending=False).head(20) #♣ ölüm oranlarının azalan sıralaması (en fazla ölümolan 20 değer)
 # print(a1)
 
-# df=df.drop(30492) # silme işleminin tabloya yansıması için atama yapmamız gerekir
-# print(df.sort_values(by='Deaths',ascending=False).head(20))
+# df.drop(34699) # istenilen satırı silmek (tabloya yanısımayacak)
+# print(a1)
 
-# df.drop(30043,inplace=True) # istenilen satırı silmek direkt yansır
-# print(df.sort_values(by='Deaths',ascending=False).head(20))
+# df=df.drop(34699) # silme işleminin tabloya yansıması için atama yapmamız gerekir
+# a1=df.sort_values(by='Deaths',ascending=False).head(20)
+# print(a1)
 
-# """
+# df.drop(34035,inplace=True) # istenilen satırı silmek direkt yansır
+# a1=df.sort_values(by='Deaths',ascending=False).head(20)
+# print(a1)
+
+ 
 # df=df.drop("SNo",axis=1) # Sütun silmek (eksenin 1 olması gerek)
 # print(df.sort_values(by='Deaths',ascending=False).head(20))
-# """
 
+# 
 # df=df.drop(columns="SNo")  # Sütun silmek (eksenin 1 olması gerek)
 # print(df.columns)
 
@@ -32,5 +34,5 @@ print(a1)
 
 # print(df.isnull().sum()) # nan değerlern toplamı
 
-# #df=df.drop() # nan değerleri sile (ama diğer bilgilerde uçabilir)
+#df=df.drop() # nan değerleri sile (ama diğer bilgilerde uçabilir)
 

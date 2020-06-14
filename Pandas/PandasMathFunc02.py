@@ -3,7 +3,7 @@ import pandas as pd
 sayılar=[0,1,2,3,4,5,6,7,8,9]
 seriler=pd.Series(data=sayılar)
 
-print(seriler.sum()) # Toplam
+# print(seriler.sum()) # Toplam
 
 # print(seriler.min()) # Minimum Değer
 

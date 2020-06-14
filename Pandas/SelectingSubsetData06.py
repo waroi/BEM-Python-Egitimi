@@ -1,7 +1,7 @@
 import pandas as pd
 
 df=pd.read_csv("covid/covid_19_data.csv")
-print(df)
+# print(df)
 
 # sehir=df["Province/State"] # Şehir bilgisi
 # print(sehir)
